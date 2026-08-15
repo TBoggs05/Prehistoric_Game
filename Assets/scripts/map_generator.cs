@@ -1,56 +1,110 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.Hierarchy;
 
 public class map_generator : MonoBehaviour
 {
-    //width and heigh of the texture in pixels
-    public int pixWidth;
-    public int pixHeight;
+    Dictionary<int, GameObject> tileset;
+    Dictionary<int, GameObject> tile_groups;
+    public GameObject prefab_plains;
+    public GameObject prefab_water;
+    public GameObject prefab_forest;
+    public GameObject prefab_rocky;
 
-    //The origin of the sampled area in the plane.
-    public float xOrg;
-    public float yOrg;
 
+    int map_width = 160;
+    int map_height = 90;
 
-    // The number of cycles of the basic noise apttern that are repeated
-    // over the width and height of the texture.
-    public float scale = 1.0f;
+    List<List<int>> noise_grid = new List<List<int>>();
+    List<List<GameObject>> tile_grid = new List<List<GameObject>>();
 
-    public Texture2D noiseTex;
-    private Color[] pix;
-    private Renderer rend;
+    float magnification = 10.0f;
+
+    float x_offset; // <- +>
+    float y_offset; // v- +^
 
     void Start()
     {
-        rend = GetComponent<Renderer>();
-
-        //Set up the texture and a Color array to hold pixels during processing.
-        noiseTex = new Texture2D(pixWidth, pixHeight);
-        pix = new Color[noiseTex.width * noiseTex.height];
-        rend.material.mainTexture = noiseTex;
-        CalcNoise();
+        x_offset = Random.Range(0.0f, 9.82f); // <- +>
+        y_offset = Random.Range(0.0f, 9.82f); // v- +^
+        CreateTileset();
+        CreateTileGroups();
+        GenerateMap();
     }
-    void CalcNoise()
+    void CreateTileset()
     {
-        //For each pixel in the texture...
-        for (float y = 0.0f; y < noiseTex.height; y++)
+        /** Collect and assign ID codes to the tile prefabs, for ease of access. Best ordered to match land elevation **/
+
+        tileset = new Dictionary<int, GameObject>();
+        tileset.Add(0, prefab_water);
+        tileset.Add(1, prefab_plains);
+        tileset.Add(2, prefab_forest);
+        tileset.Add(3, prefab_rocky);
+    }
+
+    void CreateTileGroups()
+    {
+        /** Create empty gameobjects for grouping tiles of the same type, ie forest tiles **/
+
+        tile_groups = new Dictionary<int, GameObject>();
+        foreach(KeyValuePair<int, GameObject> prefab_pair in tileset)
         {
-            for (float x = 0.0f; x < noiseTex.width; x++)
+            GameObject tile_group = new GameObject(prefab_pair.Value.name);
+            tile_group.transform.parent = gameObject.transform;
+            tile_group.transform.localPosition = new Vector3(0, 0, 0);
+            tile_groups.Add(prefab_pair.Key, tile_group);
+        }
+    }
+
+    void GenerateMap()
+    {
+        /** Generate a 2D grid using the Perlin noise function, storing it as both raw ID values
+         * and tile gameobjects **/
+        for (int x = 0; x < map_width; x++)
+        {
+            //add rows to be filled out in the next inner loop for both the noise grid and tile grip maps
+            noise_grid.Add(new List<int>());
+            tile_grid.Add(new List<GameObject>());
+            for (int y = 0; y < map_height; y++)
             {
-                float xCoord = xOrg + x / noiseTex.width * scale;
-                float yCoord = yOrg + y / noiseTex.height * scale;
-                float sample = Mathf.PerlinNoise(xCoord, yCoord);
-                pix[(int)y * noiseTex.width + (int)x] = new Color(sample, sample, sample);
+                int tile_id = GetIdUsingPerlin(x, y);
+                noise_grid[x].Add(tile_id);
+                CreateTile(tile_id, x, y);
             }
         }
-
-        //Copy the pixel data to the texture and load it into the GPU.
-        noiseTex.SetPixels(pix);
-        noiseTex.Apply();
     }
 
-    void Update()
+    int GetIdUsingPerlin(int x, int y)
     {
-       
+        //** Using a grid coordinate input, generate a Perlin noise value to be
+        // converted into a tile ID code. Rescale the normalized perlin value to the # of tiles available  **//
+        //send x,y, but adjust them to give function a nice float.
+        float raw_perlin = Mathf.PerlinNoise(
+            (x - x_offset) / magnification,
+            (y - y_offset) / magnification
+        );
+        float clamp_perlin = Mathf.Clamp(raw_perlin, 0.0f, 1.0f); //normalize between 0-1.
+        float scaled_perlin = clamp_perlin * tileset.Count;
+        if(scaled_perlin == 4)
+        {
+            scaled_perlin = 3;
+        }
+        return Mathf.FloorToInt(scaled_perlin);
+    }
+
+    void CreateTile(int tile_id, int x, int y)
+    {
+        //** This function creates a new tile using the type id code, group it with common tiles, set its position and store the game object. **//
+        GameObject tile_prefab = tileset[tile_id];
+        GameObject tile_group = tile_groups[tile_id];
+        GameObject tile = Instantiate(tile_prefab, tile_group.transform);
+
+        tile.name = string.Format("tile_x{0}_y{1}", x, y);
+
+        tile.name = string.Format("tilex{0}_y{1}", x, y);
+        tile.transform.localPosition = new Vector3(x, y, 0);
+
+        tile_grid[x].Add(tile);
     }
 }
