@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Main manager for title and all of the game. Main fuctions will go here for gameplay loop
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private bool gameInPlay = false;
