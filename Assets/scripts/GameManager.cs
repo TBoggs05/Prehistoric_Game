@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,5 +22,14 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Play()
+    {
+        gameInPlay = true;
+
+        // Check if on title screen and then load main scene and unload title scene
+        if(SceneManager.GetActiveScene().name == "Title Screen")
+            SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
     }
 }
