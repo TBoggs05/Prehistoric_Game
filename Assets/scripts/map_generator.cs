@@ -85,12 +85,14 @@ public class map_generator : MonoBehaviour
             (y - y_offset) / magnification
         );
         float clamp_perlin = Mathf.Clamp(raw_perlin, 0.0f, 1.0f); //normalize between 0-1.
-        float scaled_perlin = clamp_perlin * tileset.Count;
-        if(scaled_perlin == 4)
-        {
-            scaled_perlin = 3;
-        }
-        return Mathf.FloorToInt(scaled_perlin);
+        if (raw_perlin < 0.10f)
+            return 0; //water
+        if (raw_perlin < 0.40f)
+            return 1; //plains
+        if (raw_perlin < 0.76f)
+            return 2; //forest
+       
+            return 3; //rocky
     }
 
     void CreateTile(int tile_id, int x, int y)

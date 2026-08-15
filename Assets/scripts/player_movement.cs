@@ -1,15 +1,18 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 public class Player_Movement : MonoBehaviour 
 {
 
     [SerializeField] protected float speed = 6.7f;
-
-
+    [SerializeField] protected Sprite upSprite;
+    [SerializeField] protected Sprite leftSprite; //default
+    [SerializeField] protected Sprite rightSprite;
+    [SerializeField] protected Sprite downSprite;
     private Rigidbody2D rb;
     private Vector2 movement;
-
-
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
     //currently using rigidbody physics based movement
     int inputHandler(Rigidbody2D player)
     {
@@ -17,12 +20,44 @@ public class Player_Movement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         movement = new Vector2(moveX, moveY).normalized; //normalize vectors to fix diagonal speedboost
+        spriteHandler(movement);
         return 0;
+    }
+    //change sprite orientation based on current movement direction
+    void spriteHandler(Vector2 movDir)
+    {
+      if(movDir.x < 0)
+        {
+            spriteRenderer.sprite = leftSprite;
+            spriteRenderer.flipX = false;
+            animator.SetInteger("Movdir", 0);
+        }
+       else if (movDir.x > 0)
+        {
+            spriteRenderer.sprite = leftSprite;
+            spriteRenderer.flipX = true;
+            animator.SetInteger("Movdir", 1);
+        }
+        else if(movDir.y < 0)
+        {
+            spriteRenderer.sprite = upSprite;
+            spriteRenderer.flipY  = true;
+            animator.SetInteger("Movdir", 2);
+        }
+        
+        else if (movDir.y > 0)
+        {
+            spriteRenderer.sprite = upSprite;
+            spriteRenderer.flipY = false;
+            animator.SetInteger("Movdir", 3);
+        }
     }
 
     void Start()
     {
-        Debug.Log("Hello World! I'm the Player");
+        animator = GetComponent<Animator>();
+        animator.SetInteger("Movdir", 0);
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
 
