@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class Player_Movement : MonoBehaviour 
 {
 
-    [SerializeField] protected float speed = 6.7f;
+    [SerializeField] public float speed = 6.7f;
 
 
     [SerializeField] protected CapsuleCollider2D hitbox;
@@ -94,6 +94,7 @@ public class Player_Movement : MonoBehaviour
         animator.SetInteger("Movdir", 0);
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        SetHitBoxHorizontal();
     }
     void Update()
     {

@@ -243,4 +243,3 @@ MonoBehaviour:
   speed: 6
   horizontalHitbox: {fileID: 1339391803992229701}
   alertHitbox: {fileID: 7675137522952547070}
-  player: {fileID: 0}

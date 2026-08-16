@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 2655497493011372683}
   - component: {fileID: 6194954556863216194}
   - component: {fileID: 1507847826607871432}
-  - component: {fileID: 1339391803992229701}
+  - component: {fileID: 3180044600875615513}
+  - component: {fileID: 5877624661113482714}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,12 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
   speed: 6.7
-  upSprite: {fileID: -5017531283054639547, guid: 226dc68b4777df74585105e7ef7b087c, type: 3}
-  leftSprite: {fileID: -6110352136526683523, guid: 226dc68b4777df74585105e7ef7b087c, type: 3}
-  rightSprite: {fileID: -263142638510022308, guid: 226dc68b4777df74585105e7ef7b087c, type: 3}
-  downSprite: {fileID: -7873086707803914190, guid: 226dc68b4777df74585105e7ef7b087c, type: 3}
-  horizontalHitbox: {fileID: 1339391803992229701}
-  vertHitbox: {fileID: 0}
+  hitbox: {fileID: 3180044600875615513}
 --- !u!50 &6194954556863216194
 Rigidbody2D:
   serializedVersion: 5
@@ -164,8 +160,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &1339391803992229701
-BoxCollider2D:
+--- !u!70 &3180044600875615513
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -198,15 +194,18 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.069411665, y: -0.002766192}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 0.55, y: 2.21}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.8698146, y: 0.14265919}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
+--- !u!114 &5877624661113482714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293738360336926355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c76b51a6bc52c746aef88ecf43af928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
