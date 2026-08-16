@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyStats : Stats
 {
+    void Awake()
+    {
+        attackSpeed = 4f;
+    }
+
     void Update()
     {
         Debug.Log("Enemy Health: " + getHealth());

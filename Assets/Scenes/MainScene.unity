@@ -124,11 +124,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4150694776149044952, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
   m_PrefabInstance: {fileID: 1591869255221250522}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &2134781425 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8224473005468263948, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
-  m_PrefabInstance: {fileID: 1591869255221250522}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1591869255221250522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,10 +132,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2655497493011372683, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
-      propertyPath: hurtBoxMovement
-      value: 
-      objectReference: {fileID: 2134781425}
     - target: {fileID: 4150694776149044952, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.86
@@ -184,14 +175,6 @@ PrefabInstance:
     - target: {fileID: 7293738360336926355, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8224473005468263948, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8535702180831631083, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
-      propertyPath: m_FlipX
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

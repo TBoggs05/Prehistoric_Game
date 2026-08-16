@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7675137522952547070}
   - component: {fileID: 9170698490775640987}
   - component: {fileID: 4608674766855809672}
+  - component: {fileID: 6249650628673302093}
   m_Layer: 0
   m_Name: TrexEnemy
   m_TagString: Enemy
@@ -256,5 +257,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1490aee3d79cf264788ec0586e3b7c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  isPlayer: 0
   hurtBox: {fileID: 0}
   playerStats: {fileID: 0}
+  enemyStats: {fileID: 6249650628673302093}
+--- !u!114 &6249650628673302093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293738360336926355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4ff0a4913527f48a22aa643e9b1ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
+  damage: 1
+  range: 1
+  health: 1
+  level: 1

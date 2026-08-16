@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
   speed: 6.7
   hitbox: {fileID: 3180044600875615513}
+  hurtBoxMovement: {fileID: 8224473005468263948}
 --- !u!50 &6194954556863216194
 Rigidbody2D:
   serializedVersion: 5
@@ -237,14 +238,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6f397a19cb61b4e895b91820d13b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
-  progression: {fileID: 8974422655549889616}
   damage: 1
   range: 1
   health: 1
+  level: 1
+  progression: {fileID: 8974422655549889616}
   hunger: 0
   eggsEaten: 0
   dinosKilled: 0
-  level: 1
 --- !u!114 &8301237295019921212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,6 +260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Combat
   hurtBox: {fileID: 8224473005468263948}
   playerStats: {fileID: 7648152880061759910}
+  enemtStats: {fileID: 0}
+  objectInHitBox: {fileID: 0}
 --- !u!61 &8224473005468263948
 BoxCollider2D:
   m_ObjectHideFlags: 0

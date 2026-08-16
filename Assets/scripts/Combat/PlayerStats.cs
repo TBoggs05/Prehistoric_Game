@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerStats : Stats
 {
 
-    [SerializeField] protected PlayerProgression progression = new PlayerProgression();
+    [SerializeField] protected PlayerProgression progression;
     [SerializeField] protected float hunger = 0f;
     [SerializeField] protected int eggsEaten = 0;
     [SerializeField] protected int dinosKilled = 0;

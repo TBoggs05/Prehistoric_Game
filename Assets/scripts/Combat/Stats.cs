@@ -8,6 +8,7 @@ public class Stats : MonoBehaviour
     [SerializeField] protected float damage = 1f;
     [SerializeField] protected float range = 1f;
     [SerializeField] protected float health = 1f;
+    [SerializeField] protected float attackSpeed = 2f;
     [SerializeField] protected int level = 1;
     
     public float getDamage()
@@ -48,5 +49,15 @@ public class Stats : MonoBehaviour
     public int getLevel()
     {
         return level;
+    }
+
+    public void setAttackSpeed(float speed)
+    {
+        attackSpeed = speed;
+    }
+
+    public float getAttackSpeed()
+    {
+        return attackSpeed; 
     }
 }
