@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1d13ef9ec76a34286e8ea681259c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Movement
-  speed: 6
+  speed: 0
   horizontalHitbox: {fileID: 1339391803992229701}
   alertHitbox: {fileID: 7675137522952547070}
 --- !u!114 &585172173809550477
