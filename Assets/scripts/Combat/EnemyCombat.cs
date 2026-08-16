@@ -28,6 +28,7 @@ public class EnemyCombat : Combat
     {
         isPlayer = false;
         timer = 4f;
+        hasLineOfSight = false;
     }
 
     void Update()

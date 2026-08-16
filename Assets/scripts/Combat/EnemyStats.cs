@@ -15,7 +15,8 @@ public class EnemyStats : Stats
 
     void Update()
     {
-        Debug.Log("Enemy Health: " + getHealth());
+        if(getHealth() == 0)
+            Die();
     }
 
 

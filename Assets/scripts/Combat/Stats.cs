@@ -5,20 +5,20 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-    [SerializeField] protected float damage = 1f;
+    [SerializeField] protected int damage = 1;
     [SerializeField] protected float range = 1f;
-    [SerializeField] protected float health = 1f;
+    [SerializeField] protected int health = 1;
     [SerializeField] protected float attackSpeed = 2f;
     [SerializeField] protected int level = 1;
     
-    public float getDamage()
+    public int getDamage()
     {
         return damage;
     }
 
     void setLevelDamage()
     {
-        damage = damage * level * 0.5f;
+        damage = damage * level;
     }
 
     public float getRange()
@@ -31,7 +31,7 @@ public class Stats : MonoBehaviour
         range = range * level;
     }
 
-    public float getHealth()
+    public int getHealth()
     {
         return health;
     }
@@ -41,7 +41,7 @@ public class Stats : MonoBehaviour
         health += level;
     }
 
-    public void takeDamage(float damage)
+    public void takeDamage(int damage)
     {
         health -= damage;
     }
