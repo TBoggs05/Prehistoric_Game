@@ -237,14 +237,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6f397a19cb61b4e895b91820d13b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
-  progression: {fileID: 8974422655549889616}
   damage: 1
   range: 1
   health: 1
+  level: 1
+  progression: {fileID: 8974422655549889616}
   hunger: 0
   eggsEaten: 0
   dinosKilled: 0
-  level: 1
 --- !u!114 &8301237295019921212
 MonoBehaviour:
   m_ObjectHideFlags: 0
