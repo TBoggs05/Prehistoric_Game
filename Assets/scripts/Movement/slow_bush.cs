@@ -15,7 +15,7 @@ public class slow_bush : MonoBehaviour
             other.GetComponent<Player_Movement>().speed /= 2;
 
             
-            Debug.Log("Entered zone: Setting up initial effects.");
+            // Debug.Log("Entered zone: Setting up initial effects.");
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -24,7 +24,7 @@ public class slow_bush : MonoBehaviour
         {
             other.GetComponent<Player_Movement>().speed *= 2;
 
-            Debug.Log("Entered zone: Setting up initial effects.");
+            // Debug.Log("Entered zone: Setting up initial effects.");
         }
     }
 }

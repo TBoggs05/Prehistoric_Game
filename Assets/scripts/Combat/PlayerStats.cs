@@ -1,12 +1,11 @@
-using JetBrains.Annotations;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class PlayerStats : Stats
 {
 
-    [SerializeField] protected PlayerProgression progression = new PlayerProgression();
+    [SerializeField] protected PlayerProgression progression;
     [SerializeField] protected float hunger = 0f;
     [SerializeField] protected int eggsEaten = 0;
     [SerializeField] protected int dinosKilled = 0;
@@ -34,7 +33,7 @@ public class PlayerStats : Stats
 
     void LevelUp()
     {
-        if (exp > progression.GetLevelUpValues()[level])
+        if(exp > progression.GetLevelUpValues()[level])
             level++;
     }
 

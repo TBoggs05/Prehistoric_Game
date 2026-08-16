@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class EnemyStats : Stats
 {
+    void Awake()
+    {
+        attackSpeed = 4f;
+    }
+
     private void Start()
     {
         if (EnemyManager.Instance != null)
@@ -15,7 +20,8 @@ public class EnemyStats : Stats
 
     void Update()
     {
-        Debug.Log("Enemy Health: " + getHealth());
+        if(getHealth() == 0)
+            Die();
     }
 
 

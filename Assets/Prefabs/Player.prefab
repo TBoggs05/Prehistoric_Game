@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
   speed: 6.7
   hitbox: {fileID: 3180044600875615513}
+  hurtBoxMovement: {fileID: 8224473005468263948}
 --- !u!50 &6194954556863216194
 Rigidbody2D:
   serializedVersion: 5
@@ -237,9 +238,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6f397a19cb61b4e895b91820d13b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
-  damage: 1
+  damage: 20
   range: 1
-  health: 1
+  health: 100
+  attackSpeed: 2
   level: 1
   progression: {fileID: 8974422655549889616}
   hunger: 0
@@ -257,8 +259,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3133628a184f624faf92573ec0a5f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Combat
+  isPlayer: 0
   hurtBox: {fileID: 8224473005468263948}
   playerStats: {fileID: 7648152880061759910}
+  enemyStats: {fileID: 0}
+  timer: 0
+  canAttack: 0
 --- !u!61 &8224473005468263948
 BoxCollider2D:
   m_ObjectHideFlags: 0

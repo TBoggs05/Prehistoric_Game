@@ -2,18 +2,53 @@ using UnityEngine;
 
 public class EnemyCombat : Combat
 {
-    void OnTriggerStay2D(Collider2D other)
+    [SerializeField] protected CapsuleCollider2D enemyHurtBox;
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         // Checks if enemy is in line of sight using the BoxCollider
-        if (other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player")
+        {
             hasLineOfSight = true;
-        else
-            hasLineOfSight = false;
+            playerStats = other.gameObject.GetComponent<PlayerStats>();
+            Debug.Log("Player in LOS");
+        }
+    }
 
-        // If in line of sight, attack
+    void OnTriggerExit2D(Collider2D other)
+    {
+        // Checks if enemy is in line of sight using the BoxCollider
+        if(other.gameObject.tag == "Player")
+        {
+            hasLineOfSight = false;
+            playerStats = null;
+            Debug.Log("Player Left LOS");
+        }
+    }
+
+    void Awake()
+    {
+        isPlayer = false;
+        timer = 4f;
+        hasLineOfSight = false;
+    }
+
+    void Update()
+    {
         if (hasLineOfSight)
         {
-            Attack(other);
+            Attack(isPlayer, canAttack, playerStats, enemyStats);
+        }
+
+                // Count down the time
+        if (timer > 0 && canAttack == false)
+        {
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            // Reset timer
+            ResetTimer(isPlayer);
         }
     }
 }

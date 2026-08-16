@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
 
 
     [SerializeField] protected CapsuleCollider2D hitbox;
+    [SerializeField] protected BoxCollider2D hurtBoxMovement;
 
 
     private Rigidbody2D rb;
@@ -20,6 +21,11 @@ public class Player_Movement : MonoBehaviour
     private Vector2 veritcalHitBoxSize = new Vector2(0.2712684f, 0.9565947f);
     private Vector2 horizontalHitBoxOffset = new Vector2(-0.06698848f, -0.007702105f);
     private Vector2 veritcalHitBoxOffset = new Vector2(0.0f, -0.06f);
+
+    private Vector2 rightHurtBoxOffset = new Vector2(0.6f, 0.0f);
+    private Vector2 leftHurtBoxOffset = new Vector2(-0.6f, 0.0f);
+    private Vector2 upHurtBoxOffset = new Vector2(0.0f, 0.6f);
+    private Vector2 downHurtBoxOffset = new Vector2(0.0f, -0.6f);
     //currently using rigidbody physics based movement
     int inputHandler(Rigidbody2D player)
     {
@@ -39,6 +45,7 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("x_mov", 1.0f);
             spriteRenderer.flipX = true;
 
+            SetHurtBoxLeft();
         }
        if (movDir.x > 0)
         {
@@ -46,6 +53,7 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("x_mov", 1.0f);
             spriteRenderer.flipX = false;
 
+            SetHurtBoxRight();
         }
         if (movDir.y < 0)
         {
@@ -54,6 +62,7 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 2);
 
+            SetHurtBoxDown();
         }
  
         if (movDir.y > 0)
@@ -63,6 +72,7 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 3);
 
+            SetHurtBoxUp();
         }
         if(movDir.y == 0)
         {
@@ -118,5 +128,25 @@ public class Player_Movement : MonoBehaviour
         hitbox.direction = CapsuleDirection2D.Horizontal;
         hitbox.size = horizontalHitBoxSize;
         hitbox.offset = horizontalHitBoxOffset;
+    }
+
+    void SetHurtBoxRight()
+    {
+        hurtBoxMovement.offset = rightHurtBoxOffset;
+    }
+
+    void SetHurtBoxLeft()
+    {
+        hurtBoxMovement.offset = leftHurtBoxOffset;
+    }
+
+    void SetHurtBoxUp()
+    {
+        hurtBoxMovement.offset = upHurtBoxOffset;
+    }
+
+    void SetHurtBoxDown()
+    {
+        hurtBoxMovement.offset = downHurtBoxOffset;
     }
 }

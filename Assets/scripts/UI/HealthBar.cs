@@ -2,17 +2,37 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
+    private int maxHealth;
+    [SerializeField] protected PlayerStats playerStats;
+    private PlayerStats stats;
 
-    public void SetHealth(int health)
+    void Awake()
     {
-        slider.value = health;
+        stats = playerStats.GetComponent<PlayerStats>();
+        maxHealth = stats.getHealth();
     }
-    public void SetMaxHealth(int max)
+
+    void Start()
     {
-        slider.maxValue = max;
-        slider.value = max;
+        SetMaxHealth();
+    }
+
+    void Update()
+    {
+        SetHealth();
+    }
+
+    public void SetHealth()
+    {
+        slider.value = stats.getHealth();
+    }
+    public void SetMaxHealth()
+    {
+        slider.maxValue = maxHealth;
+        slider.value = maxHealth;
     }
 }
