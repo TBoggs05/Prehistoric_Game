@@ -134,7 +134,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5038016889048890863, guid: 9a6a01dd25ddd2e46bde3e3b7d6c319d, type: 3}
   m_PrefabInstance: {fileID: 7048062548919994392}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1578308184}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
@@ -185,6 +185,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!1 &1578308184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1032994379910661429, guid: 9a6a01dd25ddd2e46bde3e3b7d6c319d, type: 3}
+  m_PrefabInstance: {fileID: 7048062548919994392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1578308186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578308184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6bb28177d3ca4498a146dcc51f970f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HungerBar
+  slider: {fileID: 911774989}
+  playerStats: {fileID: 1969083257}
 --- !u!1 &1698771802
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,10 +591,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5959405181044108376, guid: 9a6a01dd25ddd2e46bde3e3b7d6c319d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1032994379910661429, guid: 9a6a01dd25ddd2e46bde3e3b7d6c319d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578308186}
   m_SourcePrefab: {fileID: 100100000, guid: 9a6a01dd25ddd2e46bde3e3b7d6c319d, type: 3}
 --- !u!1001 &7084872711448024245
 PrefabInstance:
