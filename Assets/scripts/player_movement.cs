@@ -9,10 +9,16 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] protected Sprite leftSprite; //default
     [SerializeField] protected Sprite rightSprite;
     [SerializeField] protected Sprite downSprite;
+
+    [SerializeField] protected BoxCollider2D horizontalHitbox;
+    [SerializeField] protected BoxCollider2D vertHitbox;
+
     private Rigidbody2D rb;
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private bool facingLeft;
+    private bool facingUp;
     //currently using rigidbody physics based movement
     int inputHandler(Rigidbody2D player)
     {
@@ -29,14 +35,14 @@ public class Player_Movement : MonoBehaviour
       if(movDir.x < 0)
         {
             spriteRenderer.sprite = leftSprite;
-            spriteRenderer.flipX = false;
             animator.SetInteger("Movdir", 0);
+            spriteRenderer.flipX = false;
         }
        else if (movDir.x > 0)
         {
-            spriteRenderer.sprite = leftSprite;
-            spriteRenderer.flipX = true;
+            spriteRenderer.sprite = rightSprite;
             animator.SetInteger("Movdir", 1);
+            spriteRenderer.flipX = true;
         }
         else if(movDir.y < 0)
         {
@@ -57,11 +63,10 @@ public class Player_Movement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.SetInteger("Movdir", 0);
+        facingLeft = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
-
-
     void Update()
     {
         Debug.Log("YO");
