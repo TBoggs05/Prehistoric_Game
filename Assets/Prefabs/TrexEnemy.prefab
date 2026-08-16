@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1339391803992229701}
   - component: {fileID: 7675137522952547070}
   - component: {fileID: 9170698490775640987}
+  - component: {fileID: 4608674766855809672}
   m_Layer: 0
   m_Name: TrexEnemy
   m_TagString: Untagged
@@ -243,3 +244,17 @@ MonoBehaviour:
   speed: 6
   horizontalHitbox: {fileID: 1339391803992229701}
   alertHitbox: {fileID: 7675137522952547070}
+--- !u!114 &4608674766855809672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293738360336926355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1490aee3d79cf264788ec0586e3b7c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  hurtBox: {fileID: 0}
+  playerStats: {fileID: 0}

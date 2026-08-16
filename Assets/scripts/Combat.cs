@@ -13,7 +13,7 @@ public class Combat : MonoBehaviour
     void Awake()
     {
         hasLineOfSight = false;
-        hurtBox.size = new Vector2(playerStats.getRange()/2, playerStats.getRange()/3);
+        hurtBox.size = new Vector2(playerStats.getRange()/2, playerStats.getRange()/2);
     }
 
     // Detects another Collider inside the trigger collider once per frame
