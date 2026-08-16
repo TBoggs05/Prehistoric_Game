@@ -51,3 +51,5 @@ MonoBehaviour:
   prefab_nest: {fileID: 4417408894273481010, guid: 0d3f89f5408c95540bf9a58bee7fdfad, type: 3}
   prefab_tree: {fileID: 2471923931573365533, guid: 484af9b3fa594ce4a8c61b006cc3498a, type: 3}
   prefab_bush: {fileID: 3942117128865611713, guid: c44186c5f81b18547baa98c30fc597f9, type: 3}
+  map_width: 25
+  map_height: 25
