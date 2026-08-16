@@ -17,8 +17,6 @@ public class Player_Movement : MonoBehaviour
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
-    private bool facingLeft;
-    private bool facingUp;
     //currently using rigidbody physics based movement
     int inputHandler(Rigidbody2D player)
     {
@@ -34,28 +32,39 @@ public class Player_Movement : MonoBehaviour
     {
       if(movDir.x < 0)
         {
-            spriteRenderer.sprite = leftSprite;
-            animator.SetInteger("Movdir", 0);
-            spriteRenderer.flipX = false;
-        }
-       else if (movDir.x > 0)
-        {
-            spriteRenderer.sprite = rightSprite;
-            animator.SetInteger("Movdir", 1);
+            //animator.SetInteger("Movdir", 0);
+            animator.SetFloat("x_mov", 1.0f);
             spriteRenderer.flipX = true;
         }
-        else if(movDir.y < 0)
+       if (movDir.x > 0)
+        {
+            //animator.SetInteger("Movdir", 1);
+            animator.SetFloat("x_mov", 1.0f);
+            spriteRenderer.flipX = false;
+        }
+        if (movDir.y < 0)
         {
             spriteRenderer.sprite = upSprite;
-            spriteRenderer.flipY  = true;
-            animator.SetInteger("Movdir", 2);
+            spriteRenderer.flipY = true;
+            animator.SetFloat("y_mov", 1.0f);
+            //animator.SetInteger("Movdir", 2);
         }
-        
-        else if (movDir.y > 0)
+ 
+        if (movDir.y > 0)
         {
             spriteRenderer.sprite = upSprite;
             spriteRenderer.flipY = false;
-            animator.SetInteger("Movdir", 3);
+            animator.SetFloat("y_mov", 1.0f);
+            //animator.SetInteger("Movdir", 3);
+        }
+        if(movDir.y == 0)
+        {
+            animator.SetFloat("y_mov", -1.0f);
+            
+        }
+        if(movDir.x == 0)
+        {
+            animator.SetFloat("x_mov", -1.0f);
         }
     }
 
@@ -63,7 +72,6 @@ public class Player_Movement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.SetInteger("Movdir", 0);
-        facingLeft = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
