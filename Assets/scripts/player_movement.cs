@@ -68,6 +68,7 @@ public class Player_Movement : MonoBehaviour
 
             SetHitBoxVeritcal();
         }
+
         if(movDir.y == 0)
         {
             animator.SetFloat("y_mov", -1.0f);
