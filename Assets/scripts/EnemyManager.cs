@@ -9,20 +9,19 @@ public class EnemyManager : MonoBehaviour
     // Trackers
     public int EnemiesKilled { get; private set; } = 0;
     public int EnemiesRemaining { get; private set; } = 0;
-
+    private int maxEnemies = 3;
+    public bool enemiesCapped = false;
     // Actions/Events that UI or other systems can listen to
     public static event Action<int> OnKillCountChanged;
     public static event Action<int> OnRemainingCountChanged;
 
-    private void Awake()
+    void Awake()
     {
-        // Enforce Singleton Pattern
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this);
+
     }
 
     // Called automatically by an enemy when they spawn
@@ -30,6 +29,10 @@ public class EnemyManager : MonoBehaviour
     {
         EnemiesRemaining++;
         OnRemainingCountChanged?.Invoke(EnemiesRemaining);
+        if (EnemiesRemaining >= maxEnemies)
+        {
+            enemiesCapped = true;
+        }
     }
 
     // Called automatically by an enemy when they die
@@ -41,7 +44,10 @@ public class EnemyManager : MonoBehaviour
         // Trigger updates to any listening scripts
         OnKillCountChanged?.Invoke(EnemiesKilled);
         OnRemainingCountChanged?.Invoke(EnemiesRemaining);
+        if (EnemiesRemaining < maxEnemies)
+        {
+            enemiesCapped = false;
+        }
 
-   
     }
 }

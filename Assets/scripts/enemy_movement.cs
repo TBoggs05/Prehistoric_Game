@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class Enemy_Movement : MonoBehaviour
 {
 
-    [SerializeField] protected float speed = 5f;
+    [SerializeField] protected float speed = 4f;
     private float interval = 0.7f;
     [SerializeField] protected BoxCollider2D horizontalHitbox;
 

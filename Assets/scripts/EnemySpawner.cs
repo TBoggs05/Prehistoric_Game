@@ -40,12 +40,15 @@ public class EnemySpawner : MonoBehaviour
         if (spawningAllowed)
         {
             yield return new WaitForSeconds(interval);
-        dinosSpawned = transform.childCount;
-        
+            dinosSpawned = transform.childCount;
             if (dinosSpawned < maxDinos)
             {
-                GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-2f, 2f) + gameObject.transform.position.x, Random.Range(-2f, 2f) + gameObject.transform.position.y, -3), Quaternion.identity, gameObject.transform);
-                dinosSpawned++;
+                if (!EnemyManager.Instance.enemiesCapped)
+                {
+                    GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-2f, 2f) + gameObject.transform.position.x, Random.Range(-2f, 2f) + gameObject.transform.position.y, -3), Quaternion.identity, gameObject.transform);
+                    dinosSpawned++;
+                    
+                }
                 StartCoroutine(spawnEnemy(interval, enemy));
             }
         }
