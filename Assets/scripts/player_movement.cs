@@ -5,18 +5,12 @@ public class Player_Movement : MonoBehaviour
 {
 
     [SerializeField] protected float speed = 6.7f;
-    [SerializeField] protected Sprite upSprite;
-    [SerializeField] protected Sprite leftSprite; //default
-    [SerializeField] protected Sprite rightSprite;
-    [SerializeField] protected Sprite downSprite;
-
-    [SerializeField] protected BoxCollider2D horizontalHitbox;
-    [SerializeField] protected BoxCollider2D vertHitbox;
 
     private Rigidbody2D rb;
     private Vector2 movement;
-    private SpriteRenderer spriteRenderer;
     private Animator animator;
+    GameObject player;
+    Transform playerTransform;
     private bool facingLeft;
     private bool facingUp;
     //currently using rigidbody physics based movement
@@ -34,28 +28,28 @@ public class Player_Movement : MonoBehaviour
     {
       if(movDir.x < 0)
         {
-            spriteRenderer.sprite = leftSprite;
             animator.SetInteger("Movdir", 0);
-            spriteRenderer.flipX = false;
+            
+            playerTransform.rotation = Quaternion.Euler(0f, 0f, 90f);
         }
        else if (movDir.x > 0)
         {
-            spriteRenderer.sprite = rightSprite;
             animator.SetInteger("Movdir", 1);
-            spriteRenderer.flipX = true;
+
+            playerTransform.rotation = Quaternion.Euler(0f, 0f, -90f);
         }
         else if(movDir.y < 0)
         {
-            spriteRenderer.sprite = upSprite;
-            spriteRenderer.flipY  = true;
             animator.SetInteger("Movdir", 2);
+
+            playerTransform.rotation = Quaternion.Euler(0f, 0f, 180f);
         }
         
         else if (movDir.y > 0)
         {
-            spriteRenderer.sprite = upSprite;
-            spriteRenderer.flipY = false;
             animator.SetInteger("Movdir", 3);
+
+            playerTransform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
     }
 
@@ -64,8 +58,10 @@ public class Player_Movement : MonoBehaviour
         animator = GetComponent<Animator>();
         animator.SetInteger("Movdir", 0);
         facingLeft = true;
-        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+
+        player = GameObject.FindWithTag("Player");
+        playerTransform = player.transform;
     }
     void Update()
     {
