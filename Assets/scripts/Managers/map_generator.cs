@@ -11,7 +11,9 @@ public class map_generator : MonoBehaviour
     public GameObject prefab_water;
     public GameObject prefab_forest;
     public GameObject prefab_rocky;
-    public GameObject prefab_nest;
+    public GameObject prefab_nest_rex;
+    public GameObject prefab_nest_raptor;
+    public GameObject prefab_nest_dodo;
     public GameObject prefab_tree;
     public GameObject prefab_bush;
 
@@ -135,7 +137,14 @@ public class map_generator : MonoBehaviour
     }
     void SpawnNest(GameObject tile)
     {
-        GameObject nest = Instantiate(prefab_nest, tile.GetComponent<Transform>());
+        float rand = Random.Range(0.0f, 1.0f);
+        GameObject nest;
+        if(rand < 0.33f)
+            nest = Instantiate(prefab_nest_rex, tile.GetComponent<Transform>());
+        else if (rand > 0.33f && rand < 0.67f)
+            nest = Instantiate(prefab_nest_raptor, tile.GetComponent<Transform>());
+        else
+            nest = Instantiate(prefab_nest_dodo, tile.GetComponent<Transform>());
     }
     void SpawnTree(GameObject tile)
     {

@@ -9,10 +9,6 @@ public class Combat : MonoBehaviour
     [SerializeField] protected bool isPlayer;
 
     public BoxCollider2D hurtBox;
-    [SerializeField] protected PlayerStats playerStats;
-    [SerializeField] protected EnemyStats enemyStats;
-    [SerializeField] protected float timer;
-    [SerializeField] protected bool canAttack;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
