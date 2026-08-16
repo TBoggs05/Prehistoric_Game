@@ -76,8 +76,10 @@ public class Enemy_Movement : MonoBehaviour
         //calculate vector line to player
         if (PlayerController.Instance != null)
         {
+            float rand1 = UnityEngine.Random.Range(-2.0f, 2.0f);
+            float rand2 = UnityEngine.Random.Range(-0.1f, 0.2f);
             Vector2 player = PlayerController.Instance.transform.position;
-            movement = new Vector2(player.x - gameObject.transform.position.x, player.y - gameObject.transform.position.y).normalized;
+            movement = new Vector2(player.x - gameObject.transform.position.x + rand1, player.y - gameObject.transform.position.y + rand2).normalized;
         }
        
     }

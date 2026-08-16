@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class Player_Movement : MonoBehaviour 
 {
 
-    [SerializeField] protected float speed = 6.7f;
+    [SerializeField] public float speed = 6.7f;
 
 
     [SerializeField] protected CapsuleCollider2D hitbox;
