@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 public class Player_Movement : MonoBehaviour 
@@ -6,12 +7,19 @@ public class Player_Movement : MonoBehaviour
 
     [SerializeField] protected float speed = 6.7f;
 
-    [SerializeField] protected BoxCollider2D horizontalHitbox;
+
+    [SerializeField] protected CapsuleCollider2D hitbox;
+
 
     private Rigidbody2D rb;
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+
+    private Vector2 horizontalHitBoxSize = new Vector2(0.9565947f, 0.2712684f);
+    private Vector2 veritcalHitBoxSize = new Vector2(0.2712684f, 0.9565947f);
+    private Vector2 horizontalHitBoxOffset = new Vector2(-0.06698848f, -0.007702105f);
+    private Vector2 veritcalHitBoxOffset = new Vector2(0.0f, -0.06f);
     //currently using rigidbody physics based movement
     int inputHandler(Rigidbody2D player)
     {
@@ -30,12 +38,16 @@ public class Player_Movement : MonoBehaviour
             //animator.SetInteger("Movdir", 0);
             animator.SetFloat("x_mov", 1.0f);
             spriteRenderer.flipX = true;
+
+            SetHitBoxHorizontal();
         }
        if (movDir.x > 0)
         {
             //animator.SetInteger("Movdir", 1);
             animator.SetFloat("x_mov", 1.0f);
             spriteRenderer.flipX = false;
+
+            SetHitBoxHorizontal();
         }
         if (movDir.y < 0)
         {
@@ -43,6 +55,8 @@ public class Player_Movement : MonoBehaviour
             spriteRenderer.flipY = true;
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 2);
+
+            SetHitBoxVeritcal();
         }
  
         if (movDir.y > 0)
@@ -51,6 +65,8 @@ public class Player_Movement : MonoBehaviour
             spriteRenderer.flipY = false;
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 3);
+
+            SetHitBoxVeritcal();
         }
         if(movDir.y == 0)
         {
@@ -80,4 +96,17 @@ public class Player_Movement : MonoBehaviour
         rb.linearVelocity = movement * speed;
     }
 
+    void SetHitBoxVeritcal()
+    {
+        hitbox.direction = CapsuleDirection2D.Vertical;
+        hitbox.size = veritcalHitBoxSize;
+        hitbox.offset = veritcalHitBoxOffset;
+    }
+
+    void SetHitBoxHorizontal()
+    {
+        hitbox.direction = CapsuleDirection2D.Horizontal;
+        hitbox.size = horizontalHitBoxSize;
+        hitbox.offset = horizontalHitBoxOffset;
+    }
 }
