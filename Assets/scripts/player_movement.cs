@@ -39,7 +39,6 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("x_mov", 1.0f);
             spriteRenderer.flipX = true;
 
-            SetHitBoxHorizontal();
         }
        if (movDir.x > 0)
         {
@@ -47,7 +46,6 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("x_mov", 1.0f);
             spriteRenderer.flipX = false;
 
-            SetHitBoxHorizontal();
         }
         if (movDir.y < 0)
         {
@@ -56,7 +54,6 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 2);
 
-            SetHitBoxVeritcal();
         }
  
         if (movDir.y > 0)
@@ -66,9 +63,7 @@ public class Player_Movement : MonoBehaviour
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 3);
 
-            SetHitBoxVeritcal();
         }
-
         if(movDir.y == 0)
         {
             animator.SetFloat("y_mov", -1.0f);
@@ -78,6 +73,19 @@ public class Player_Movement : MonoBehaviour
         {
             animator.SetFloat("x_mov", -1.0f);
         }
+        if (Math.Abs(movDir.y) > Math.Abs(movDir.x))
+        {
+            SetHitBoxVeritcal();
+        }
+        else if (Math.Abs(movDir.y) < Math.Abs(movDir.x))
+        {
+            SetHitBoxHorizontal();
+        }
+        if (animator.GetFloat("x_mov") == 1.0f && animator.GetFloat("y_mov") == 1.0f)
+        {
+            SetHitBoxHorizontal();
+        }
+
     }
 
     void Start()
