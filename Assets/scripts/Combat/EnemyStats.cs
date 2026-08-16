@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class EnemyStats : Stats
 {
+    [SerializeField] protected float satitety;
+
     void Awake()
     {
         attackSpeed = 4f;
+        satitety = 10f;
     }
 
     private void Start()

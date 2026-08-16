@@ -6,7 +6,7 @@ public class PlayerStats : Stats
 {
 
     [SerializeField] protected PlayerProgression progression;
-    [SerializeField] protected float hunger = 0f;
+    [SerializeField] protected float hunger = 100f;
     [SerializeField] protected int eggsEaten = 0;
     [SerializeField] protected int dinosKilled = 0;
     protected float exp = 0f;
@@ -29,6 +29,11 @@ public class PlayerStats : Stats
     public void addDinoKilled(int numberKilled)
     {
         dinosKilled += numberKilled;
+    }
+
+    public float getHunger()
+    {
+        return hunger;
     }
 
     void LevelUp()
