@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private bool gameInPlay = false;
-    [SerializeField] private bool gameOver = false;
     [SerializeField] private GameManager instance;
 
     void Awake ()
@@ -22,15 +21,23 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(gameInPlay == false)
+        {
+            GameOver();
+        }
     }
 
-    public void Play()
+    protected void Play()
     {
         gameInPlay = true;
 
         // Check if on title screen and then load main scene and unload title scene
         if(SceneManager.GetActiveScene().name == "Title Screen")
             SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
+    }
+
+    protected void GameOver()
+    {
+        
     }
 }
