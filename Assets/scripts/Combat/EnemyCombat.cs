@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyCombat : Combat
 {
+    [SerializeField] protected CapsuleCollider2D enemyHurtBox;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         // Checks if enemy is in line of sight using the BoxCollider
@@ -39,7 +41,7 @@ public class EnemyCombat : Combat
         }
 
                 // Count down the time
-        if (timer > 0)
+        if (timer > 0 && canAttack == false)
         {
             timer -= Time.deltaTime;
         }

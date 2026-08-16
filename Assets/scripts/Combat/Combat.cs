@@ -58,7 +58,7 @@ public class Combat : MonoBehaviour
         hurtBox.size = new Vector2(playerStats.getRange()/2, playerStats.getRange()/2);
 
         // Count down the time
-        if (timer > 0)
+        if (timer > 0 && canAttack == false)
         {
             timer -= Time.deltaTime;
         }

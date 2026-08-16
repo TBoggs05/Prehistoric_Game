@@ -1,5 +1,94 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2790069619889506514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4237740766727614855}
+  - component: {fileID: 204637506693604202}
+  - component: {fileID: 8114802042911803978}
+  m_Layer: 0
+  m_Name: HurtBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4237740766727614855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2790069619889506514}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4150694776149044952}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &204637506693604202
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2790069619889506514}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0015800009, y: 0.0063202786}
+  m_Size: {x: 0.9772214, y: 0.34199673}
+  m_Direction: 1
+--- !u!114 &8114802042911803978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2790069619889506514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1490aee3d79cf264788ec0586e3b7c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  isPlayer: 0
+  hurtBox: {fileID: 0}
+  playerStats: {fileID: 7648152880061759910, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
+  enemyStats: {fileID: 6249650628673302093}
+  timer: 4
+  canAttack: 0
+  enemyHurtBox: {fileID: 204637506693604202}
 --- !u!1 &7293738360336926355
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +104,6 @@ GameObject:
   - component: {fileID: 1339391803992229701}
   - component: {fileID: 7675137522952547070}
   - component: {fileID: 9170698490775640987}
-  - component: {fileID: 4608674766855809672}
   - component: {fileID: 6249650628673302093}
   m_Layer: 0
   m_Name: TrexEnemy
@@ -36,7 +124,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4237740766727614855}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8535702180831631083
@@ -245,24 +334,6 @@ MonoBehaviour:
   speed: 0
   horizontalHitbox: {fileID: 1339391803992229701}
   alertHitbox: {fileID: 7675137522952547070}
---- !u!114 &4608674766855809672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7293738360336926355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1490aee3d79cf264788ec0586e3b7c62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
-  isPlayer: 0
-  hurtBox: {fileID: 0}
-  playerStats: {fileID: 0}
-  enemyStats: {fileID: 6249650628673302093}
-  timer: 0
-  canAttack: 0
 --- !u!114 &6249650628673302093
 MonoBehaviour:
   m_ObjectHideFlags: 0
