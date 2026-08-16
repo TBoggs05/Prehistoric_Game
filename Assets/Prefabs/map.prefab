@@ -48,3 +48,6 @@ MonoBehaviour:
   prefab_water: {fileID: 1986486439170627257, guid: 5fcf6e02890719d4abfd17fed80661bb, type: 3}
   prefab_forest: {fileID: 4183196614462738220, guid: d410e500dc2329747801222e60220337, type: 3}
   prefab_rocky: {fileID: 7512890690454510180, guid: b2995bec6fa8121468a585c0aa9ecb4c, type: 3}
+  prefab_nest: {fileID: 4417408894273481010, guid: 0d3f89f5408c95540bf9a58bee7fdfad, type: 3}
+  prefab_tree: {fileID: 2471923931573365533, guid: 484af9b3fa594ce4a8c61b006cc3498a, type: 3}
+  prefab_bush: {fileID: 3942117128865611713, guid: c44186c5f81b18547baa98c30fc597f9, type: 3}
