@@ -1,54 +1,16 @@
-using System.Collections.Generic;
 using JetBrains.Annotations;
+using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : Stats
 {
 
-    [SerializeField] private PlayerProgression progression = new PlayerProgression();
-    [SerializeField] private float damage = 1f;
-    [SerializeField] private float range = 1f;
-    [SerializeField] private float health = 1f;
-    [SerializeField] private float hunger = 0f;
-    [SerializeField] private int eggsEaten = 0;
-    [SerializeField] private int dinosKilled = 0;
-    [SerializeField] private int level = 1;
-    private float exp = 0f;
-    
-    public float getDamage()
-    {
-        return damage;
-    }
-
-    void setLevelDamage()
-    {
-        damage = damage * level * 0.5f;
-    }
-
-    public float getRange()
-    {
-        return range;
-    }
-
-    void setLevelRange()
-    {
-        range = range * level;
-    }
-
-    public float getHealth()
-    {
-        return health;
-    }
-
-    void setLevelHealth()
-    {
-        health += level;
-    }
-
-    public void takeDamage(float damage)
-    {
-        health -= damage;
-    }
+    [SerializeField] protected PlayerProgression progression = new PlayerProgression();
+    [SerializeField] protected float hunger = 0f;
+    [SerializeField] protected int eggsEaten = 0;
+    [SerializeField] protected int dinosKilled = 0;
+    protected float exp = 0f;
 
     public int getEggsEaten()
     {
@@ -70,14 +32,9 @@ public class PlayerStats : MonoBehaviour
         dinosKilled += numberKilled;
     }
 
-    public int getLevel()
-    {
-        return level;
-    }
-
     void LevelUp()
     {
-        if(exp > progression.GetLevelUpValues()[level])
+        if (exp > progression.GetLevelUpValues()[level])
             level++;
     }
 
