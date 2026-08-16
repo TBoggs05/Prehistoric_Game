@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1d13ef9ec76a34286e8ea681259c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Movement
-  speed: 6
+  speed: 0
   horizontalHitbox: {fileID: 1339391803992229701}
   alertHitbox: {fileID: 7675137522952547070}
 --- !u!114 &4608674766855809672
@@ -261,6 +261,8 @@ MonoBehaviour:
   hurtBox: {fileID: 0}
   playerStats: {fileID: 0}
   enemyStats: {fileID: 6249650628673302093}
+  timer: 0
+  canAttack: 0
 --- !u!114 &6249650628673302093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,4 +278,5 @@ MonoBehaviour:
   damage: 1
   range: 1
   health: 1
+  attackSpeed: 2
   level: 1

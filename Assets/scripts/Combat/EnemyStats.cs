@@ -1,16 +1,32 @@
-using System.Collections.Generic;
 using JetBrains.Annotations;
+using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class EnemyStats : Stats
 {
-    void Awake()
+    private void Start()
     {
-        attackSpeed = 4f;
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.RegisterEnemy();
+        }
     }
 
     void Update()
     {
         Debug.Log("Enemy Health: " + getHealth());
+    }
+
+
+    //handle cleanup and alert enemymanager
+    void Die()
+    {
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.EnemyDied();
+        }
+
+        Destroy(gameObject);
     }
 }
