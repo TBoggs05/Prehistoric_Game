@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 
 public class Combat : MonoBehaviour
 {
-    private bool hasLineOfSight;
+    protected bool hasLineOfSight;
 
     public BoxCollider2D hurtBox;
     [SerializeField] private PlayerStats playerStats = new PlayerStats();
@@ -17,21 +17,26 @@ public class Combat : MonoBehaviour
     }
 
     // Detects another Collider inside the trigger collider once per frame
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         // Checks if enemy is in line of sight using the BoxCollider
         if(other.gameObject.tag == "Enemy")
-            hasLineOfSight = true;
-        else
-            hasLineOfSight = false;
-
-        // If in line of sight, and left mouse is clicked, attack
-        if(hasLineOfSight && Input.GetMouseButtonDown(0))
         {
-            Attack(other);
+            hasLineOfSight = true;
+            Debug.Log("Enemey in LOS");
         }
     }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        // Checks if enemy is in line of sight using the BoxCollider
+        if(other.gameObject.tag == "Enemy")
+        {
+            hasLineOfSight = false;
+            Debug.Log("Enemey Left LOS");
+        }
+    }
+    
     public void Attack(Collider2D other)
     {
         other.gameObject.GetComponent<Combat>().DamageReceived(playerStats.getDamage());
