@@ -5,13 +5,8 @@ public class Player_Movement : MonoBehaviour
 {
 
     [SerializeField] protected float speed = 6.7f;
-    [SerializeField] protected Sprite upSprite;
-    [SerializeField] protected Sprite leftSprite; //default
-    [SerializeField] protected Sprite rightSprite;
-    [SerializeField] protected Sprite downSprite;
 
     [SerializeField] protected BoxCollider2D horizontalHitbox;
-    [SerializeField] protected BoxCollider2D vertHitbox;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -44,7 +39,7 @@ public class Player_Movement : MonoBehaviour
         }
         if (movDir.y < 0)
         {
-            spriteRenderer.sprite = upSprite;
+          //  spriteRenderer.sprite = upSprite;
             spriteRenderer.flipY = true;
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 2);
@@ -52,7 +47,7 @@ public class Player_Movement : MonoBehaviour
  
         if (movDir.y > 0)
         {
-            spriteRenderer.sprite = upSprite;
+         //   spriteRenderer.sprite = upSprite;
             spriteRenderer.flipY = false;
             animator.SetFloat("y_mov", 1.0f);
             //animator.SetInteger("Movdir", 3);
@@ -77,7 +72,6 @@ public class Player_Movement : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log("YO");
         inputHandler(rb);
     }
 
