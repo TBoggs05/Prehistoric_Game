@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
 
-    [SerializeField] protected float spawnInterval = 3.5f;
+    [SerializeField] protected float spawnInterval = 7f;
     [SerializeField] protected GameObject dino_enemy_prefab;
     private int dinosSpawned;
     private int maxDinos = 3;
