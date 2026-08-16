@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: e75e8436d34fb484aa68eee9ec453089
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5574464553612532648
+    second: raptor_idle_up_0
+  - first:
+      213: 1020905297615001507
+    second: raptor_idle_up_1
+  - first:
+      213: 4722045621153094774
+    second: raptor_idle_up_2
+  - first:
+      213: -6282527418608362612
+    second: raptor_idle_up_3
+  - first:
+      213: 6464167819271203003
+    second: raptor_idle_up_4
+  - first:
+      213: -2701925830513085467
+    second: raptor_idle_up_5
+  - first:
+      213: -2511494215363204630
+    second: raptor_idle_up_6
+  - first:
+      213: -7967463190820877459
+    second: raptor_idle_up_7
+  - first:
+      213: 4515553275041465673
+    second: raptor_idle_up_8
+  - first:
+      213: -3662157779288441193
+    second: raptor_idle_up_9
+  - first:
+      213: -8023343970602123050
+    second: raptor_idle_up_10
+  - first:
+      213: 3417224146357357296
+    second: raptor_idle_up_11
+  - first:
+      213: 6139313372633998328
+    second: raptor_idle_up_12
+  - first:
+      213: 3830352761073529439
+    second: raptor_idle_up_13
+  - first:
+      213: -1044652632308570159
+    second: raptor_idle_up_14
+  - first:
+      213: 7217939066410728030
+    second: raptor_idle_up_15
+  - first:
+      213: -4938094244000861888
+    second: raptor_idle_up_16
+  - first:
+      213: 8067349455741708501
+    second: raptor_idle_up_17
+  - first:
+      213: -2073248473696609324
+    second: raptor_idle_up_18
+  - first:
+      213: 3057079450333343518
+    second: raptor_idle_up_19
+  - first:
+      213: 1119968002934620632
+    second: raptor_idle_up_20
+  - first:
+      213: 1476961290050516655
+    second: raptor_idle_up_21
+  - first:
+      213: 591009520250151615
+    second: raptor_idle_up_22
+  - first:
+      213: -2602741946595431066
+    second: raptor_idle_up_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: raptor_idle_up_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 256
+        width: 54
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8542be4f50683a2b0800000000000000
+      internalID: -5574464553612532648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 259
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a718ad85fbfa2e00800000000000000
+      internalID: 1020905297615001507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 258
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cd4065973188140800000000000000
+      internalID: 4722045621153094774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_3
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 264
+        width: 75
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b523a599affc8a0800000000000000
+      internalID: -6282527418608362612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_4
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 260
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8eb2c026655b950800000000000000
+      internalID: 6464167819271203003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_5
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 259
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3b0d6c5c4d08ad0800000000000000
+      internalID: -2701925830513085467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_6
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 256
+        width: 54
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9e3dd4151652dd0800000000000000
+      internalID: -2511494215363204630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_7
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 259
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b0f1ef072ed6190800000000000000
+      internalID: -7967463190820877459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_8
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 260
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945c23b77c77aae30800000000000000
+      internalID: 4515553275041465673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_9
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 264
+        width: 75
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e341617e66d2dc0800000000000000
+      internalID: -3662157779288441193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_10
+      rect:
+        serializedVersion: 2
+        x: 2661
+        y: 260
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d00d711b2b57a090800000000000000
+      internalID: -8023343970602123050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_11
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 259
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa8481814b6c6f20800000000000000
+      internalID: 3417224146357357296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_12
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 33
+        width: 54
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3a7a42cf8333550800000000000000
+      internalID: 6139313372633998328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_13
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 33
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f527938ca85282530800000000000000
+      internalID: 3830352761073529439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_14
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 33
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7229937f5a081f0800000000000000
+      internalID: -1044652632308570159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_15
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 33
+        width: 75
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a73dfa6554b2460800000000000000
+      internalID: 7217939066410728030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_16
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 33
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0417deeb27d587bb0800000000000000
+      internalID: -4938094244000861888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_17
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 33
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8ec6c569bf4ff60800000000000000
+      internalID: 8067349455741708501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_18
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 33
+        width: 54
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db513a6f775a33e0800000000000000
+      internalID: -2073248473696609324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_19
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 33
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fe34f109dec6a20800000000000000
+      internalID: 3057079450333343518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_20
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 33
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1c8bef6fcea8f00800000000000000
+      internalID: 1119968002934620632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_21
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 33
+        width: 75
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6b670d7783f7410800000000000000
+      internalID: 1476961290050516655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_22
+      rect:
+        serializedVersion: 2
+        x: 2661
+        y: 33
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb262610700b33800800000000000000
+      internalID: 591009520250151615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor_idle_up_23
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 33
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dab2f4df331ebd0800000000000000
+      internalID: -2602741946595431066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      raptor_idle_up_0: -5574464553612532648
+      raptor_idle_up_1: 1020905297615001507
+      raptor_idle_up_10: -8023343970602123050
+      raptor_idle_up_11: 3417224146357357296
+      raptor_idle_up_12: 6139313372633998328
+      raptor_idle_up_13: 3830352761073529439
+      raptor_idle_up_14: -1044652632308570159
+      raptor_idle_up_15: 7217939066410728030
+      raptor_idle_up_16: -4938094244000861888
+      raptor_idle_up_17: 8067349455741708501
+      raptor_idle_up_18: -2073248473696609324
+      raptor_idle_up_19: 3057079450333343518
+      raptor_idle_up_2: 4722045621153094774
+      raptor_idle_up_20: 1119968002934620632
+      raptor_idle_up_21: 1476961290050516655
+      raptor_idle_up_22: 591009520250151615
+      raptor_idle_up_23: -2602741946595431066
+      raptor_idle_up_3: -6282527418608362612
+      raptor_idle_up_4: 6464167819271203003
+      raptor_idle_up_5: -2701925830513085467
+      raptor_idle_up_6: -2511494215363204630
+      raptor_idle_up_7: -7967463190820877459
+      raptor_idle_up_8: 4515553275041465673
+      raptor_idle_up_9: -3662157779288441193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

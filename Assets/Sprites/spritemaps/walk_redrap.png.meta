@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 05ca9b0ce657fef4086fce655c8c0d6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8567653327577346097
+    second: walk_redrap_0
+  - first:
+      213: 7192484234762024515
+    second: walk_redrap_1
+  - first:
+      213: 1267704136383884950
+    second: walk_redrap_2
+  - first:
+      213: -9133119792925698892
+    second: walk_redrap_3
+  - first:
+      213: -7625619474645747065
+    second: walk_redrap_4
+  - first:
+      213: 2961725539557707904
+    second: walk_redrap_5
+  - first:
+      213: -3237984466842263629
+    second: walk_redrap_6
+  - first:
+      213: 7320364911563526491
+    second: walk_redrap_7
+  - first:
+      213: 9202576572521019783
+    second: walk_redrap_8
+  - first:
+      213: -3277104462443906490
+    second: walk_redrap_9
+  - first:
+      213: 7040421548948444607
+    second: walk_redrap_10
+  - first:
+      213: 7383317976397879072
+    second: walk_redrap_11
+  - first:
+      213: -6372334884350496471
+    second: walk_redrap_12
+  - first:
+      213: 5021379412750561229
+    second: walk_redrap_13
+  - first:
+      213: -4731191155009291580
+    second: walk_redrap_14
+  - first:
+      213: -7092717519135420597
+    second: walk_redrap_15
+  - first:
+      213: -3400316085495495534
+    second: walk_redrap_16
+  - first:
+      213: 6861922338546675959
+    second: walk_redrap_17
+  - first:
+      213: -4029912611894880122
+    second: walk_redrap_18
+  - first:
+      213: -747760300431301220
+    second: walk_redrap_19
+  - first:
+      213: -4084845966213177208
+    second: walk_redrap_20
+  - first:
+      213: 8527477781005522948
+    second: walk_redrap_21
+  - first:
+      213: 3886791530388061291
+    second: walk_redrap_22
+  - first:
+      213: 7515500479862603783
+    second: walk_redrap_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walk_redrap_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 252
+        width: 52
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf0f0321b4991980800000000000000
+      internalID: -8567653327577346097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 255
+        width: 52
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3467699dd46d0d360800000000000000
+      internalID: 7192484234762024515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 254
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e6479023ac79110800000000000000
+      internalID: 1267704136383884950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_3
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 260
+        width: 75
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4139b00f3a04180800000000000000
+      internalID: -9133119792925698892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_4
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 256
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a70757d7b5c2690800000000000000
+      internalID: -7625619474645747065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_5
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 255
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0801a83bfa92a1920800000000000000
+      internalID: 2961725539557707904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_6
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 252
+        width: 52
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf52a1784e5013d0800000000000000
+      internalID: -3237984466842263629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_7
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 255
+        width: 52
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b515af32a19279560800000000000000
+      internalID: 7320364911563526491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_8
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 256
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7897277a2ae16bf70800000000000000
+      internalID: 9202576572521019783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_9
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 260
+        width: 75
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64afe20bad26582d0800000000000000
+      internalID: -3277104462443906490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_10
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 256
+        width: 63
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5d316d81a94b160800000000000000
+      internalID: 7040421548948444607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_11
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 255
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02793feb490d67660800000000000000
+      internalID: 7383317976397879072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 223
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921757c4f2be097a0800000000000000
+      internalID: -6372334884350496471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 99
+        width: 220
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfe473b8f58fa540800000000000000
+      internalID: 5021379412750561229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_14
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 97
+        width: 219
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca733126be675eb0800000000000000
+      internalID: -4731191155009291580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_15
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 97
+        width: 215
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f4eb3cefa919d90800000000000000
+      internalID: -7092717519135420597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_16
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 97
+        width: 219
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2948eff2986afc0d0800000000000000
+      internalID: -3400316085495495534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_17
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 97
+        width: 220
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f07469c2027a3f50800000000000000
+      internalID: 6861922338546675959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_18
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 97
+        width: 223
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6889324b4dfd218c0800000000000000
+      internalID: -4029912611894880122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_19
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 97
+        width: 220
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9527a3f7fb6f95f0800000000000000
+      internalID: -747760300431301220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_20
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 88
+        width: 219
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8802da57c36bf47c0800000000000000
+      internalID: -4084845966213177208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_21
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 76
+        width: 215
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408dede7cdfa75670800000000000000
+      internalID: 8527477781005522948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_22
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 88
+        width: 219
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6cf6c4cd48a0f530800000000000000
+      internalID: 3886791530388061291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_redrap_23
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 97
+        width: 220
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7000d7b1edb6c4860800000000000000
+      internalID: 7515500479862603783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      walk_redrap_0: -8567653327577346097
+      walk_redrap_1: 7192484234762024515
+      walk_redrap_10: 7040421548948444607
+      walk_redrap_11: 7383317976397879072
+      walk_redrap_12: -6372334884350496471
+      walk_redrap_13: 5021379412750561229
+      walk_redrap_14: -4731191155009291580
+      walk_redrap_15: -7092717519135420597
+      walk_redrap_16: -3400316085495495534
+      walk_redrap_17: 6861922338546675959
+      walk_redrap_18: -4029912611894880122
+      walk_redrap_19: -747760300431301220
+      walk_redrap_2: 1267704136383884950
+      walk_redrap_20: -4084845966213177208
+      walk_redrap_21: 8527477781005522948
+      walk_redrap_22: 3886791530388061291
+      walk_redrap_23: 7515500479862603783
+      walk_redrap_3: -9133119792925698892
+      walk_redrap_4: -7625619474645747065
+      walk_redrap_5: 2961725539557707904
+      walk_redrap_6: -3237984466842263629
+      walk_redrap_7: 7320364911563526491
+      walk_redrap_8: 9202576572521019783
+      walk_redrap_9: -3277104462443906490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
