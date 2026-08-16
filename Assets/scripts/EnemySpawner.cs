@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] protected float spawnInterval = 3.5f;
     [SerializeField] protected GameObject dino_enemy_prefab;
     private int dinosSpawned;
-    private int maxDinos = 5;
+    private int maxDinos = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

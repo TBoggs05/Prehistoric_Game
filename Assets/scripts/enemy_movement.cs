@@ -5,12 +5,11 @@ using UnityEngine.EventSystems;
 public class Enemy_Movement : MonoBehaviour
 {
 
-    [SerializeField] protected float speed = 6f;
+    [SerializeField] protected float speed = 5f;
     private float interval = 0.7f;
     [SerializeField] protected BoxCollider2D horizontalHitbox;
 
     [SerializeField] protected CircleCollider2D alertHitbox;
-    [SerializeField] protected GameObject player; // will need to draw force vector towards player
 
     private Vector2 movementDirection;
 
@@ -60,11 +59,11 @@ public class Enemy_Movement : MonoBehaviour
 
     void Start()
     {
+        
         animator = GetComponent<Animator>();
         animator.SetInteger("Movdir", 0);
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-       // huntPlayer();
     }
     void Update()
     {
@@ -75,7 +74,12 @@ public class Enemy_Movement : MonoBehaviour
     {
         Debug.Log("GOING TO HURT PLAYER!");
         //calculate vector line to player
-        movement = new Vector2(player.transform.position.x - gameObject.transform.position.x, player.transform.position.y - gameObject.transform.position.y).normalized;
+        if (PlayerController.Instance != null)
+        {
+            Vector2 player = PlayerController.Instance.transform.position;
+            movement = new Vector2(player.x - gameObject.transform.position.x, player.y - gameObject.transform.position.y).normalized;
+        }
+       
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

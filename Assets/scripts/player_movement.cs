@@ -94,6 +94,7 @@ public class Player_Movement : MonoBehaviour
         animator.SetInteger("Movdir", 0);
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        SetHitBoxHorizontal();
     }
     void Update()
     {
