@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: b576f0ff96241fb44a214baf71314930
+guid: 74ac09d1bbb640c499fc0e10570aecbb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2143866200059705061
-    second: objects_tileset_0
+      213: 1061818140727861025
+    second: objects_tileset 1_0
   - first:
-      213: -8254796839836237421
-    second: objects_tileset_1
+      213: -8886839769145540091
+    second: objects_tileset 1_1
   - first:
-      213: -6190386415661845491
-    second: objects_tileset_2
+      213: -4630534936139988147
+    second: objects_tileset 1_2
   - first:
-      213: 290409382791496480
-    second: objects_tileset_3
+      213: 6651908211145953778
+    second: objects_tileset 1_3
   - first:
-      213: 5247411521339243047
-    second: objects_tileset_4
+      213: -2025232196573399867
+    second: objects_tileset 1_4
   - first:
-      213: 6811077205770842887
-    second: objects_tileset_5
+      213: -5499826472342104085
+    second: objects_tileset 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -167,7 +167,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: objects_tileset_0
+      name: objects_tileset 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e6768443fa80cd10800000000000000
-      internalID: 2143866200059705061
+      spriteID: 12f562629f55cbe00800000000000000
+      internalID: 1061818140727861025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_tileset_1
+      name: objects_tileset 1_1
       rect:
         serializedVersion: 2
         x: 137
@@ -204,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3914b8c8202117d80800000000000000
-      internalID: -8254796839836237421
+      spriteID: 5020440805a9ba480800000000000000
+      internalID: -8886839769145540091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_tileset_2
+      name: objects_tileset 1_2
       rect:
         serializedVersion: 2
         x: 268
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0472106a54571aa0800000000000000
-      internalID: -6190386415661845491
+      spriteID: d43075b52090dbfb0800000000000000
+      internalID: -4630534936139988147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_tileset_3
+      name: objects_tileset 1_3
       rect:
         serializedVersion: 2
         x: 410
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0234ab48bcdb70400800000000000000
-      internalID: 290409382791496480
+      spriteID: 2f1dbd35643505c50800000000000000
+      internalID: 6651908211145953778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_tileset_4
+      name: objects_tileset 1_4
       rect:
         serializedVersion: 2
         x: 538
@@ -270,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72ab7b70afc82d840800000000000000
-      internalID: 5247411521339243047
+      spriteID: 5c4fe8f1c0ee4e3e0800000000000000
+      internalID: -2025232196573399867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_tileset_5
+      name: objects_tileset 1_5
       rect:
         serializedVersion: 2
         x: 669
@@ -292,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7033bbbc1aec58e50800000000000000
-      internalID: 6811077205770842887
+      spriteID: be752c576f0bca3b0800000000000000
+      internalID: -5499826472342104085
       vertices: []
       indices: 
       edges: []
@@ -312,12 +312,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      objects_tileset_0: 2143866200059705061
-      objects_tileset_1: -8254796839836237421
-      objects_tileset_2: -6190386415661845491
-      objects_tileset_3: 290409382791496480
-      objects_tileset_4: 5247411521339243047
-      objects_tileset_5: 6811077205770842887
+      objects_tileset 1_0: 1061818140727861025
+      objects_tileset 1_1: -8886839769145540091
+      objects_tileset 1_2: -4630534936139988147
+      objects_tileset 1_3: 6651908211145953778
+      objects_tileset 1_4: -2025232196573399867
+      objects_tileset 1_5: -5499826472342104085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

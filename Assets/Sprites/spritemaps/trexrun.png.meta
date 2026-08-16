@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 6d1a6227de474704baa8abb6fe645aa4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7852106582377699868
+    second: trexrun_0
+  - first:
+      213: -8651757539558876210
+    second: trexrun_1
+  - first:
+      213: 5194052054816489501
+    second: trexrun_2
+  - first:
+      213: 8409085048551759066
+    second: trexrun_3
+  - first:
+      213: 7452120156957613283
+    second: trexrun_4
+  - first:
+      213: 3181341139388248304
+    second: trexrun_5
+  - first:
+      213: 8100870670934606530
+    second: trexrun_6
+  - first:
+      213: -3431540055780978186
+    second: trexrun_7
+  - first:
+      213: -7765690045628964751
+    second: trexrun_8
+  - first:
+      213: 827345583917108995
+    second: trexrun_9
+  - first:
+      213: -2644864744665490927
+    second: trexrun_10
+  - first:
+      213: 2486588933880694590
+    second: trexrun_11
+  - first:
+      213: 3744637697087230846
+    second: trexrun_12
+  - first:
+      213: 1726633111351730752
+    second: trexrun_13
+  - first:
+      213: 8495642320553138245
+    second: trexrun_14
+  - first:
+      213: 5465475030421997011
+    second: trexrun_15
+  - first:
+      213: -5659510324293063087
+    second: trexrun_16
+  - first:
+      213: -2737580691513023927
+    second: trexrun_17
+  - first:
+      213: 6643447745841654101
+    second: trexrun_18
+  - first:
+      213: 8355383124497809861
+    second: trexrun_19
+  - first:
+      213: -4610813057354987122
+    second: trexrun_20
+  - first:
+      213: -2953022069874853904
+    second: trexrun_21
+  - first:
+      213: -4995565356996579969
+    second: trexrun_22
+  - first:
+      213: 5618616637504653637
+    second: trexrun_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: trexrun_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 257
+        width: 67
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a112d955948fc60800000000000000
+      internalID: 7852106582377699868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 261
+        width: 65
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb19c35b58cee780800000000000000
+      internalID: -8651757539558876210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_2
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 264
+        width: 67
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10893813daf41840800000000000000
+      internalID: 5194052054816489501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_3
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 272
+        width: 67
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcd9f46c4213b470800000000000000
+      internalID: 8409085048551759066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_4
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 266
+        width: 67
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec9cfabccf3b6760800000000000000
+      internalID: 7452120156957613283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 263
+        width: 65
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0b29a29e4662c20800000000000000
+      internalID: 3181341139388248304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_6
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 257
+        width: 67
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2007874f21c6070800000000000000
+      internalID: 8100870670934606530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_7
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 259
+        width: 65
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f196a61088b060d0800000000000000
+      internalID: -3431540055780978186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_8
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 262
+        width: 67
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170af724c0aba3490800000000000000
+      internalID: -7765690045628964751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_9
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 270
+        width: 71
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f0ed3dc625b7b00800000000000000
+      internalID: 827345583917108995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_10
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 262
+        width: 67
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a524f178d8b4bd0800000000000000
+      internalID: -2644864744665490927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_11
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 259
+        width: 65
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37406af573228220800000000000000
+      internalID: 2486588933880694590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 90
+        width: 243
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73db634520a7f330800000000000000
+      internalID: 3744637697087230846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_13
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 96
+        width: 239
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0422c8baaab36f710800000000000000
+      internalID: 1726633111351730752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 91
+        width: 236
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548585fbda596e570800000000000000
+      internalID: 8495642320553138245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_15
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 96
+        width: 228
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d50215359449db40800000000000000
+      internalID: 5465475030421997011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_16
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 90
+        width: 239
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e2bdd68516571b0800000000000000
+      internalID: -5659510324293063087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_17
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 96
+        width: 239
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942e56a8dd8220ad0800000000000000
+      internalID: -2737580691513023927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_18
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 90
+        width: 243
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559e2ceb684423c50800000000000000
+      internalID: 6643447745841654101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_19
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 96
+        width: 239
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c14cf9dea844f370800000000000000
+      internalID: 8355383124497809861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_20
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 91
+        width: 236
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e898f9614f91300c0800000000000000
+      internalID: -4610813057354987122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_21
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 89
+        width: 228
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7783fb212c407d0800000000000000
+      internalID: -2953022069874853904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_22
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 90
+        width: 236
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7da8f386cf2caab0800000000000000
+      internalID: -4995565356996579969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trexrun_23
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 96
+        width: 239
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5498097201659fd40800000000000000
+      internalID: 5618616637504653637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      trexrun_0: 7852106582377699868
+      trexrun_1: -8651757539558876210
+      trexrun_10: -2644864744665490927
+      trexrun_11: 2486588933880694590
+      trexrun_12: 3744637697087230846
+      trexrun_13: 1726633111351730752
+      trexrun_14: 8495642320553138245
+      trexrun_15: 5465475030421997011
+      trexrun_16: -5659510324293063087
+      trexrun_17: -2737580691513023927
+      trexrun_18: 6643447745841654101
+      trexrun_19: 8355383124497809861
+      trexrun_2: 5194052054816489501
+      trexrun_20: -4610813057354987122
+      trexrun_21: -2953022069874853904
+      trexrun_22: -4995565356996579969
+      trexrun_23: 5618616637504653637
+      trexrun_3: 8409085048551759066
+      trexrun_4: 7452120156957613283
+      trexrun_5: 3181341139388248304
+      trexrun_6: 8100870670934606530
+      trexrun_7: -3431540055780978186
+      trexrun_8: -7765690045628964751
+      trexrun_9: 827345583917108995
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

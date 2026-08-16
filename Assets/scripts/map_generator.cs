@@ -11,10 +11,12 @@ public class map_generator : MonoBehaviour
     public GameObject prefab_water;
     public GameObject prefab_forest;
     public GameObject prefab_rocky;
+    public GameObject prefab_nest;
+    public GameObject prefab_tree;
+    public GameObject prefab_bush;
 
-
-    int map_width = 160;
-    int map_height = 90;
+    [SerializeField] int map_width = 160;
+    [SerializeField] int map_height = 90;
 
     List<List<int>> noise_grid = new List<List<int>>();
     List<List<GameObject>> tile_grid = new List<List<GameObject>>();
@@ -108,5 +110,39 @@ public class map_generator : MonoBehaviour
         tile.transform.localPosition = new Vector3(x, y, 0);
 
         tile_grid[x].Add(tile);
+
+        //random chance of spawning a nest
+        float random_value = UnityEngine.Random.Range(0.0f, 1.0f);
+        if(tile_id == 2 && random_value > 0.96)
+        {
+            SpawnTree(tile);
+        }
+        else if(tile_id == 1)
+        {
+            if(random_value > 0.98)
+            {
+                SpawnTree(tile);
+            }
+            else if(random_value < 0.30 &&  random_value > 0.05)
+            {
+                SpawnBush(tile);
+            }
+        }
+        if(random_value < 0.01)
+        {
+            SpawnNest(tile);
+        }
+    }
+    void SpawnNest(GameObject tile)
+    {
+        GameObject nest = Instantiate(prefab_nest, tile.GetComponent<Transform>());
+    }
+    void SpawnTree(GameObject tile)
+    {
+        GameObject nest = Instantiate(prefab_tree, tile.GetComponent<Transform>());
+    }
+    void SpawnBush(GameObject tile)
+    {
+        GameObject bush = Instantiate(prefab_bush, tile.GetComponent<Transform>());
     }
 }
