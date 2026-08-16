@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
   speed: 6.7
   hitbox: {fileID: 3180044600875615513}
+  hurtBoxMovement: {fileID: 8224473005468263948}
 --- !u!50 &6194954556863216194
 Rigidbody2D:
   serializedVersion: 5
@@ -259,6 +260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Combat
   hurtBox: {fileID: 8224473005468263948}
   playerStats: {fileID: 7648152880061759910}
+  enemtStats: {fileID: 0}
+  objectInHitBox: {fileID: 0}
 --- !u!61 &8224473005468263948
 BoxCollider2D:
   m_ObjectHideFlags: 0
