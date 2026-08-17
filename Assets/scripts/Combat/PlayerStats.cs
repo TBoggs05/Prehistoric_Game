@@ -50,8 +50,8 @@ public class PlayerStats : Stats
 
     public void Regen()
     {
-        if(hunger/100 > 0.7 && health < 100)
-            health += Convert.ToInt32(rateOfIncOrDec * 27.5 * Time.deltaTime);
+        if(hunger/100 > 0.6 && health < 100)
+            health += Convert.ToInt32(rateOfIncOrDec * 20.5 * Time.deltaTime);
     }
 
     public void Eat(float amountRestored)
