@@ -28,6 +28,7 @@ public class EnemyStats : Stats
         if(getHealth() <= 0)
         {
             player.Eat(satitety);
+            player.addDinoKilled(1);
             Die();
         }
     }
