@@ -97,6 +97,7 @@ public class PlayerStats : Stats
 
     void Died()
     {
-        GameManager.Instance.gameOver = true;
+       
+        GameManager.Instance.GameOver();
     }
 }

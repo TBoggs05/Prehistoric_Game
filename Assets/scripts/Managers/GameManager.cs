@@ -5,7 +5,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public bool gameOver = false;
 
     public int finalEggs = 0;
     public int finalDinos = 0;
@@ -27,18 +26,10 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
-    void Update()
-    {
-        if (gameOver)
-        {
-            GameOver();
-        }
-    }
+   
 
     public void Play()
     {
-        gameOver = false;
-
         finalEggs = 0;
         finalDinos = 0;
 
@@ -48,7 +39,7 @@ public class GameManager : MonoBehaviour
         );
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         SceneManager.LoadSceneAsync(
             "DeathScreen",
