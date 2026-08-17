@@ -401,6 +401,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7648152880061759910, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
+      propertyPath: hunger
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648152880061759910, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
+      propertyPath: starveRate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

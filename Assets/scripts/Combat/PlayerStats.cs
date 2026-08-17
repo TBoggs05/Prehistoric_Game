@@ -1,15 +1,18 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class PlayerStats : Stats
 {
 
     [SerializeField] protected PlayerProgression progression;
-    [SerializeField] protected float hunger = 100f;
     [SerializeField] protected int eggsEaten = 0;
     [SerializeField] protected int dinosKilled = 0;
+    
     protected float exp = 0f;
+    private float hunger = 100f;
+    public float starveRate = 1f;
 
     public int getEggsEaten()
     {
@@ -34,6 +37,24 @@ public class PlayerStats : Stats
     public float getHunger()
     {
         return hunger;
+    }
+
+    public void Starve()
+    {
+        hunger -= starveRate * Time.deltaTime;
+
+        if(hunger < 0f)
+            hunger = 0f;
+    }
+
+    public void Eat(float amountRestored)
+    {
+        float temp = hunger + amountRestored;
+
+        if(temp > 100)
+            hunger = 100f;
+        else
+            hunger = temp;
     }
 
     void LevelUp()
