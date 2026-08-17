@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 // Main manager for title and all of the game. Main fuctions will go here for gameplay loop
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private bool gameInPlay = false;
-    [SerializeField] private GameManager instance;
+    [SerializeField] public bool gameOver = false;
+    
+    public static GameManager Instance { get; private set; }
 
     void Awake ()
     {
-        if(instance == null)
-            instance = this;
+        if(Instance == null)
+            Instance = this;
         else
             Destroy(this);
 
@@ -21,23 +22,22 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameInPlay == false)
+        if(gameOver)
         {
             GameOver();
         }
     }
 
-    protected void Play()
+    public void Play()
     {
-        gameInPlay = true;
+        gameOver = false;
 
-        // Check if on title screen and then load main scene and unload title scene
-        if(SceneManager.GetActiveScene().name == "Title Screen")
-            SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
     }
 
-    protected void GameOver()
+    void GameOver()
     {
-        
+        Debug.Log("Game Over");
+        SceneManager.LoadSceneAsync("DeathScreen", LoadSceneMode.Single);
     }
 }

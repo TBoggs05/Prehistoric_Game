@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEditor.Rendering;
@@ -72,5 +73,26 @@ public class PlayerStats : Stats
     {
         LevelUp();
         ExpCalc();
+
+        if(hunger <= 0)
+        {
+            health -= Convert.ToInt32(starveRate * Time.deltaTime * 20);
+        }
+        
+        if(health <= 0)
+        {
+            eggsEaten = 0;
+            dinosKilled = 0;
+            exp = 0f;
+            hunger = 100f;
+            starveRate = 1f;
+
+            Died();
+        }
+    }
+
+    void Died()
+    {
+        GameManager.Instance.gameOver = true;
     }
 }
