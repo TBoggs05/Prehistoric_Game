@@ -17,7 +17,9 @@ public class TextChanger : MonoBehaviour
 
     void Update()
     {
-        DinosKilled.text = "Dinosaurs Eaten: " + playerStats.getDinosKileld();
+        GameManager.Instance.finalDinos = playerStats.getDinosKilled();
+        GameManager.Instance.finalEggs = playerStats.getEggsEaten();
+        DinosKilled.text = "Dinosaurs Eaten: " + playerStats.getDinosKilled();
         EggsKilled.text = "Eggs Eaten: " + playerStats.getEggsEaten();
     }
 }

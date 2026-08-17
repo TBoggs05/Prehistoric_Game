@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c977ed63823d3464ab51db16e836b5a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  gameInPlay: 0
   gameOver: 0
-  instance: {fileID: 8924933472874529925}
+  finalEggs: 0
+  finalDinos: 0

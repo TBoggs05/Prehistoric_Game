@@ -1,28 +1,35 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Main manager for title and all of the game. Main fuctions will go here for gameplay loop
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] public bool gameOver = false;
-    
     public static GameManager Instance { get; private set; }
 
-    void Awake ()
+    public bool gameOver = false;
+
+    public int finalEggs = 0;
+    public int finalDinos = 0;
+
+    void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
+        {
             Instance = this;
-        else
-            Destroy(this);
+
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
         Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(gameOver)
+        if (gameOver)
         {
             GameOver();
         }
@@ -32,12 +39,20 @@ public class GameManager : MonoBehaviour
     {
         gameOver = false;
 
-        SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
+        finalEggs = 0;
+        finalDinos = 0;
+
+        SceneManager.LoadSceneAsync(
+            "MainScene",
+            LoadSceneMode.Single
+        );
     }
 
-    void GameOver()
+    private void GameOver()
     {
-        Debug.Log("Game Over");
-        SceneManager.LoadSceneAsync("DeathScreen", LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync(
+            "DeathScreen",
+            LoadSceneMode.Single
+        );
     }
 }

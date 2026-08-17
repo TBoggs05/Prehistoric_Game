@@ -23,6 +23,7 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
+        stats.Regen();
         SetHealth();
     }
 

@@ -13,7 +13,7 @@ public class PlayerStats : Stats
     
     protected float exp = 0f;
     private float hunger = 100f;
-    public float starveRate = 1f;
+    public float rateOfIncOrDec = 1.25f;
 
     public int getEggsEaten()
     {
@@ -25,7 +25,7 @@ public class PlayerStats : Stats
         eggsEaten += eggs;
     }
 
-    public int getDinosKileld()
+    public int getDinosKilled()
     {
         return dinosKilled;
     }
@@ -42,10 +42,16 @@ public class PlayerStats : Stats
 
     public void Starve()
     {
-        hunger -= starveRate * Time.deltaTime;
+        hunger -= rateOfIncOrDec * Time.deltaTime;
 
         if(hunger < 0f)
             hunger = 0f;
+    }
+
+    public void Regen()
+    {
+        if(hunger/100 > 0.7 && health < 100)
+            health += Convert.ToInt32(rateOfIncOrDec * 27.5 * Time.deltaTime);
     }
 
     public void Eat(float amountRestored)
@@ -76,16 +82,14 @@ public class PlayerStats : Stats
 
         if(hunger <= 0)
         {
-            health -= Convert.ToInt32(starveRate * Time.deltaTime * 20);
+            health -= Convert.ToInt32(rateOfIncOrDec * Time.deltaTime * 20);
         }
         
         if(health <= 0)
         {
-            eggsEaten = 0;
-            dinosKilled = 0;
             exp = 0f;
             hunger = 100f;
-            starveRate = 1f;
+            rateOfIncOrDec = 1f;
 
             Died();
         }
