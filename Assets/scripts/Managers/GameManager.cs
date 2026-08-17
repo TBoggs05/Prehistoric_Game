@@ -1,43 +1,58 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Main manager for title and all of the game. Main fuctions will go here for gameplay loop
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private bool gameInPlay = false;
-    [SerializeField] private GameManager instance;
+    public static GameManager Instance { get; private set; }
 
-    void Awake ()
+    public bool gameOver = false;
+
+    public int finalEggs = 0;
+    public int finalDinos = 0;
+
+    void Awake()
     {
-        if(instance == null)
-            instance = this;
-        else
-            Destroy(this);
+        if (Instance == null)
+        {
+            Instance = this;
+
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
         Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(gameInPlay == false)
+        if (gameOver)
         {
             GameOver();
         }
     }
 
-    protected void Play()
+    public void Play()
     {
-        gameInPlay = true;
+        gameOver = false;
 
-        // Check if on title screen and then load main scene and unload title scene
-        if(SceneManager.GetActiveScene().name == "Title Screen")
-            SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
+        finalEggs = 0;
+        finalDinos = 0;
+
+        SceneManager.LoadSceneAsync(
+            "MainScene",
+            LoadSceneMode.Single
+        );
     }
 
-    protected void GameOver()
+    private void GameOver()
     {
-        
+        SceneManager.LoadSceneAsync(
+            "DeathScreen",
+            LoadSceneMode.Single
+        );
     }
 }

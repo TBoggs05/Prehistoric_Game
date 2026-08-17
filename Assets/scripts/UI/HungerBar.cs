@@ -13,7 +13,7 @@ public class HungerBar : MonoBehaviour
     void Awake()
     {
         stats = playerStats.GetComponent<PlayerStats>();
-        maxHunger = stats.getHealth();
+        maxHunger = stats.getHunger();
     }
 
     void Start()
@@ -23,12 +23,13 @@ public class HungerBar : MonoBehaviour
 
     void Update()
     {
+        stats.Starve();
         SetHunger();
     }
 
     public void SetHunger()
     {
-        slider.value = stats.getHealth();
+        slider.value = stats.getHunger();
     }
     public void SetMaxHunger()
     {

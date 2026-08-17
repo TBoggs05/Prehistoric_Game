@@ -5,17 +5,19 @@ using UnityEngine;
 
 public class EnemyStats : Stats
 {
-    [SerializeField] protected float satitety;
     [SerializeField] protected bool isEgg;
+    [SerializeField] protected float satitety = 20f;
+    [SerializeField] protected PlayerStats player;
 
     void Awake()
     {
         attackSpeed = 4f;
-        satitety = 10f;
     }
 
     private void Start()
     {
+        player = FindAnyObjectByType<PlayerStats>();
+
         if (EnemyManager.Instance != null)
         {
             EnemyManager.Instance.RegisterEnemy();
@@ -25,7 +27,11 @@ public class EnemyStats : Stats
     void Update()
     {
         if(getHealth() <= 0)
+        {
+            player.Eat(satitety);
+            player.addDinoKilled(1);
             Die();
+        }
     }
 
 
