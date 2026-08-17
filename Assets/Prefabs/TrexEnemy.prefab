@@ -348,8 +348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
   damage: 20
   range: 1
-  health: 300
-  attackSpeed: 2
+  health: 150
+  attackSpeed: 4
   level: 1
   satitety: 20
   player: {fileID: 7648152880061759910, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}

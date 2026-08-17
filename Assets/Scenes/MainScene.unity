@@ -402,6 +402,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7648152880061759910, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648152880061759910, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
       propertyPath: hunger
       value: 100
       objectReference: {fileID: 0}
