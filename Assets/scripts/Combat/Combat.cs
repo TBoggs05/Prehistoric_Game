@@ -1,3 +1,4 @@
+
 using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,6 +10,10 @@ public class Combat : MonoBehaviour
     [SerializeField] protected bool isPlayer;
 
     public BoxCollider2D hurtBox;
+    [SerializeField] protected PlayerStats playerStats;
+    [SerializeField] protected EnemyStats enemyStats;
+    [SerializeField] protected float timer;
+    [SerializeField] protected bool canAttack;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -23,7 +28,7 @@ public class Combat : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // Checks if enemy is in line of sight using the BoxCollider
-        if(other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             hasLineOfSight = true;
             enemyStats = other.gameObject.GetComponent<EnemyStats>();
@@ -34,7 +39,7 @@ public class Combat : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         // Checks if enemy is in line of sight using the BoxCollider
-        if(other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             hasLineOfSight = false;
             enemyStats = null;
@@ -51,7 +56,7 @@ public class Combat : MonoBehaviour
         else if (Input.GetMouseButtonDown(0))
             canAttack = false;
 
-        hurtBox.size = new Vector2(playerStats.getRange()/2, playerStats.getRange()/2);
+        hurtBox.size = new Vector2(playerStats.getRange() / 2, playerStats.getRange() / 2);
 
         // Count down the time
         if (timer > 0 && canAttack == false)
@@ -67,7 +72,7 @@ public class Combat : MonoBehaviour
 
     public void Attack(bool player, bool attack, PlayerStats playerStat, EnemyStats enemyStat)
     {
-        if(player && canAttack)
+        if (player && canAttack)
             enemyStat.takeDamage(playerStat.getDamage());
         else if (canAttack)
             playerStat.takeDamage(enemyStat.getDamage());
@@ -77,7 +82,7 @@ public class Combat : MonoBehaviour
 
     public void ResetTimer(bool player)
     {
-        if(player)
+        if (player)
             timer = playerStats.getAttackSpeed();
         else
             timer = enemyStats.getAttackSpeed();
