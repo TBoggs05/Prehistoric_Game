@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyStats : Stats
 {
     [SerializeField] protected float satitety;
+    [SerializeField] protected bool isEgg;
 
     void Awake()
     {
@@ -23,7 +24,7 @@ public class EnemyStats : Stats
 
     void Update()
     {
-        if(getHealth() == 0)
+        if(getHealth() <= 0)
             Die();
     }
 

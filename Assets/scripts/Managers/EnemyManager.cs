@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     // Trackers
     public int EnemiesKilled { get; private set; } = 0;
     public int EnemiesRemaining { get; private set; } = 0;
-    private int maxEnemies = 3;
+    private int maxEnemies = 30;
     public bool enemiesCapped = false;
     // Actions/Events that UI or other systems can listen to
     public static event Action<int> OnKillCountChanged;

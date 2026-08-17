@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4965601790894008159}
+  - {fileID: 1103649077086910338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7815435535586402017
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1001 &6802852607495177901
+--- !u!1001 &1572099449367500400
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -103,15 +103,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1910030790391030258, guid: 3245ac68e29988743a0be89622401f37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.026
+      value: -0.018719196
       objectReference: {fileID: 0}
     - target: {fileID: 1910030790391030258, guid: 3245ac68e29988743a0be89622401f37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.116
+      value: 0.09153652
       objectReference: {fileID: 0}
     - target: {fileID: 1910030790391030258, guid: 3245ac68e29988743a0be89622401f37, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1910030790391030258, guid: 3245ac68e29988743a0be89622401f37, type: 3}
       propertyPath: m_LocalRotation.w
@@ -150,8 +150,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3245ac68e29988743a0be89622401f37, type: 3}
---- !u!4 &4965601790894008159 stripped
+--- !u!4 &1103649077086910338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1910030790391030258, guid: 3245ac68e29988743a0be89622401f37, type: 3}
-  m_PrefabInstance: {fileID: 6802852607495177901}
+  m_PrefabInstance: {fileID: 1572099449367500400}
   m_PrefabAsset: {fileID: 0}

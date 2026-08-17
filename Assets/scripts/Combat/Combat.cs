@@ -3,7 +3,7 @@ using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
-
+using UnityEngine.Events;
 public class Combat : MonoBehaviour
 {
     protected bool hasLineOfSight;
@@ -14,6 +14,8 @@ public class Combat : MonoBehaviour
     [SerializeField] protected EnemyStats enemyStats;
     [SerializeField] protected float timer;
     [SerializeField] protected bool canAttack;
+
+    [SerializeField] Animator biteAnimator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -52,6 +54,11 @@ public class Combat : MonoBehaviour
         if (hasLineOfSight && Input.GetMouseButtonDown(0))
         {
             Attack(isPlayer, canAttack, playerStats, enemyStats);
+            if (biteAnimator != null)
+            {
+                // Fires the trigger parameter we set up in the Animator Window
+                biteAnimator.SetTrigger("bite");
+            }
         }
         else if (Input.GetMouseButtonDown(0))
             canAttack = false;
@@ -73,11 +80,21 @@ public class Combat : MonoBehaviour
     public void Attack(bool player, bool attack, PlayerStats playerStat, EnemyStats enemyStat)
     {
         if (player && canAttack)
+        {
             enemyStat.takeDamage(playerStat.getDamage());
+            
+        }
         else if (canAttack)
+        {
             playerStat.takeDamage(enemyStat.getDamage());
-
+            if (biteAnimator != null)
+            {
+                // Fires the trigger parameter we set up in the Animator Window
+                biteAnimator.SetTrigger("bite");
+            }
+        }
         canAttack = false;
+       
     }
 
     public void ResetTimer(bool player)

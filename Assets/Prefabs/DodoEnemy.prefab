@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8676510112162138706}
   m_Layer: 0
   m_Name: DodoEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,8 @@ Transform:
   m_LocalPosition: {x: -0.692, y: -5.606, z: -3}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4298366299256002434}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2017851753228033998
@@ -241,10 +242,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bf3f1a5e5ceb44eb3bc3889777b69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
-  damage: 1
+  damage: 0
   range: 1
   health: 1
+  attackSpeed: 2
   level: 1
+  satitety: 8
 --- !u!114 &8676510112162138706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +260,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7ae8b410415414ab3c5e3a8bce446d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Flee
-  speed: 5
+  speed: 3
   horizontalHitbox: {fileID: 3072610708861561656}
   alertHitbox: {fileID: 4491396460992068817}
+--- !u!1 &323544403211681725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4298366299256002434}
+  - component: {fileID: 8257327865067528329}
+  - component: {fileID: 2488350795860504585}
+  m_Layer: 0
+  m_Name: HurtBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4298366299256002434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323544403211681725}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.46133333, y: 3.7373333, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3635345571797894468}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &8257327865067528329
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323544403211681725}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.23264442, y: -1.8685508}
+  m_Size: {x: 0.13135666, y: 0.062089927}
+  m_Direction: 1
+--- !u!114 &2488350795860504585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323544403211681725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1490aee3d79cf264788ec0586e3b7c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  isPlayer: 0
+  hurtBox: {fileID: 0}
+  playerStats: {fileID: 7648152880061759910, guid: 1b008cb6ad559da4c894663dbb24198d, type: 3}
+  enemyStats: {fileID: 6924231613539463206}
+  timer: 4
+  canAttack: 0
+  enemyHurtBox: {fileID: 8257327865067528329}

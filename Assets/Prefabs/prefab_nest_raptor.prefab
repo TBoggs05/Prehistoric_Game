@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3153100141782359351}
+  - {fileID: 1267769508975166289}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4826696234192064193
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1001 &1991966283360014213
+--- !u!1001 &2449651152889319907
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -103,11 +103,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.002
+      value: -0.017944217
       objectReference: {fileID: 0}
     - target: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.095
+      value: 0.116613865
       objectReference: {fileID: 0}
     - target: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -119,15 +119,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -150,8 +150,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
---- !u!4 &3153100141782359351 stripped
+--- !u!4 &1267769508975166289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3487735650391773874, guid: 61f77f0fc181a204ab37ddef346c5dc9, type: 3}
-  m_PrefabInstance: {fileID: 1991966283360014213}
+  m_PrefabInstance: {fileID: 2449651152889319907}
   m_PrefabAsset: {fileID: 0}

@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] protected float spawnInterval = 8f;
     [SerializeField] protected GameObject dino_enemy_prefab;
     private int dinosSpawned;
-    private int maxDinos = 3;
+    private int maxDinos = 3+1; //to account for eater child
     private bool spawningAllowed;
     private bool routine_started;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,10 +41,13 @@ public class EnemySpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(interval);
             dinosSpawned = transform.childCount;
+            Debug.Log("dinos spawned:" + dinosSpawned);
+            Debug.Log("max dinos: " + maxDinos);
             if (dinosSpawned < maxDinos)
             {
                 if (!EnemyManager.Instance.enemiesCapped)
                 {
+                    Debug.Log("SPAWNING DINO!");
                     GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-2f, 2f) + gameObject.transform.position.x, Random.Range(-2f, 2f) + gameObject.transform.position.y, -3), Quaternion.identity, gameObject.transform);
                     dinosSpawned++;
                     
